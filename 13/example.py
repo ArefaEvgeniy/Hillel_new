@@ -22,3 +22,20 @@ if found:
     print("found at ({0}, {1}, {2})".format(row+1, column+1, index+1))
 else:
     print("not found")
+
+
+class TargetFound(Exception):
+    pass
+
+
+row, column, index = 0, 0, 0
+try:
+    for row, record in enumerate(table):
+        for column, field in enumerate(record):
+            for index, item in enumerate(field):
+                if item == target:
+                    raise TargetFound()
+except TargetFound:
+    print("found at ({0}, {1}, {2})".format(row+1, column+1, index+1))
+else:
+    print("not found")
