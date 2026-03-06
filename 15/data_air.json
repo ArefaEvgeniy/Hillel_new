@@ -1,0 +1,1 @@
+[{"type": "Pilot", "name": "John Doe", "age": 35, "license_number": "P12345"}, {"type": "Stuart", "name": "Jane Smith", "age": 28, "airline": "Airline XYZ"}, {"type": "Stuart", "name": "Emily Davis", "age": 30, "airline": "Airline ABC"}, {"type": "Airplane", "model": "Boeing 737", "capacity": 180}]
